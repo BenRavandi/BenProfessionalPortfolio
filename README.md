@@ -20,5 +20,5 @@ Screenshot of my webpage is available to better guid you through my professional
 
 
 ## Test
-The following link will take you to our website: <br>
+The following link will take you to my website: <br>
  <a href="https://benravandi.github.io/BenProfessionalPortfolio/">Visit My Portfolio!</a>
