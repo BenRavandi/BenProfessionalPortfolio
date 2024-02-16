@@ -1,0 +1,290 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(88, 31, 31);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(73, 67, 67);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #866868;
+}
+
+:root {
+    --white: #ffffff;
+    --green: rgb(46, 54, 54);
+    --Darkgrayishred: #afa8a8;
+}
+
+/* Header gets font style & padding */
+header {
+    background-image: url("../Images/R\ \(3\).jpg");
+    background-size: 250px;
+    background-repeat: repeat;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-indent: 40px;
+    font-variant: small-caps;
+    color: rgb(179, 174, 174);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(117, 109, 111), 0 0 5px rgb(255, 243, 243);
+}
+
+/* Navigation bar on the top right side */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color: rgb(146, 122, 122);
+    text-shadow: 1px 1px 2px rgb(238, 232, 232), 0 0 25px rgb(85, 83, 83), 0 0 5px rgb(226, 226, 226);
+    font-variant: small-caps;
+}
+
+li a:hover {
+    background-color: #866868;
+}
+
+/* Navigation links have white color with no text decoration */
+a {
+    color: #4e4848;
+    text-decoration: none;
+}
+
+/* Marketing image used as background with its own margines and styles */
+figure {
+    position: relative;
+    left: 46.5%;
+    transform: translateX(-50%);
+    height: 600px;
+    width: 55.5%;
+    margin-top: 47px;
+    background-image: url("../Images/2012-06-02\ 14.17.18.jpg");
+    background-size: cover;
+    background-position: top;
+    z-index: 0;
+    border-radius: 60px;
+    border: 10px solid var(--white);
+    opacity: 10;
+}
+
+body {
+    background-color: #b1b4b8;
+}
+
+
+h2 {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    background-image: url("../Images/R\ \(3\).jpg");
+    background-size: 250px;
+    background-repeat: repeat;
+    text-align: right;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    position: relative;
+    color: rgb(179, 174, 174);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(117, 109, 111), 0 0 5px rgb(255, 243, 243);
+    border-right: 5px solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2rem;
+    display: block;
+    font-variant: small-caps;
+    margin-right: 20px;
+}
+
+.row h2:hover {
+    color: var(--white);
+}
+
+/* main section of list items & images on the left side */
+main {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+/* Section list items all evened up with the same margine stacked on the left side */
+section {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2e2b2b;
+    line-height: 1.6;
+}
+
+#work img {
+    aspect-ratio: 20/9;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+    border-radius: 60px;
+    padding: 7px;
+    border-style: inherit;
+    background-color: var(--white);
+}
+
+/* Adding title on the image with its parent and child element */
+.column {
+    display: inline-block;
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    font-size: 0.4vw;
+    border-style: hidden;
+    border-color: var(--green);
+    padding: 5px;
+    background-color: var(--Darkgrayishred);
+}
+
+.row {
+    display: inline-block;
+    position: relative;
+}
+
+.caption1 {
+    position: absolute;
+    bottom: 105px;
+    left: 0px;
+    font-size: 0.4vw;
+    border-style: hidden;
+    border-color: var(--green);
+    padding: 5px;
+    background-color: var(--Darkgrayishred);
+}
+
+.caption2 {
+    position: absolute;
+    bottom: 104px;
+    font-size: 0.4vw;
+    border-style: hidden;
+    border-color: var(--green);
+    padding: 5px;
+    background-color: var(--Darkgrayishred);
+}
+
+.caption3 {
+    position: absolute;
+    bottom: 104px;
+    left: 0px;
+    font-size: 0.4vw;
+    border-style: hidden;
+    border-color: var(--green);
+    padding: 5px;
+    background-color: var(--Darkgrayishred);
+}
+
+.caption4 {
+    position: absolute;
+    bottom: 105px;
+    font-size: 0.4vw;
+    border-style: hidden;
+    border-color: var(--green);
+    padding: 5px;
+    background-color: var(--Darkgrayishred);
+}
+
+.row {
+    display: flex;
+    column-gap: 8px;
+    margin-top: 80px;
+}
+
+#work .row>* {
+    flex-shrink: 1;
+    flex-basis: 50%;
+    margin-top: -70px;
+}
+
+section .resume a {
+    text-decoration-line: underline;
+    color: #2f43b3;
+}
+
+#contact-me {
+    display: flex;
+    flex-grow: 0.4;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration-line: underline;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Enables the webpage to be responsive on other devices such as tablets, cellphones, etc */
+@media screen and (max-width: 992px) {
+
+    main,
+    figure {
+        width: 75%;
+    }
+
+    .caption,
+    .caption1,
+    .caption2,
+    .caption3,
+    .caption4 {
+        position: sticky;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure,
+    main {
+        width: 50%;
+    }
+
+    .row #contact-me {
+        flex-direction: column;
+    }
+
+    .caption,
+    .caption1,
+    .caption2,
+    .caption3,
+    .caption4 {
+        position: sticky;
+    }
+
+}
